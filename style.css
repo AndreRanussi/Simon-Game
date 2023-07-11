@@ -1,0 +1,216 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Press Start 2P', cursive;
+}
+
+body{
+  background-color:#003f5e;
+}
+
+.container{
+  background-color: rgba(139, 139, 139, 0.719);
+  border: .2rem solid black;
+  height: 37.5rem;
+  width: 37.5rem;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: .5rem;
+}
+
+.simon{
+  width: 32rem;
+  height: 32rem;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+.color-part{
+height: 14rem;
+width: 14rem;
+position: absolute;
+}
+
+.color1 {
+  background-color: #008000;
+  border-radius: 14rem 0 0 0 ;
+  transform: translate(-50% -50%);
+  top: 1.5rem;
+  left: 1.5em;
+}
+
+.color2 {
+  background-color: #ff0000;
+  border-radius: 0 14rem 0 0;
+  transform: translate(-50% -50%);
+  top: 1.5rem;
+  left: 16.5rem;
+}
+
+.color3{
+  background-color: #ffff00;
+  border-radius: 0 0 0 14em;
+  transform: translate(-50% -50%);
+  top: 16.5rem;
+  left: 1.5rem;
+}
+
+.color4 {
+  background-color: #1111a7;
+  border-radius: 0 0 14rem 0;
+  transform: translate(-50% -50%);
+  top: 16.5rem;
+  left: 16.5rem;
+}
+
+.counter {
+  background-color: white;
+  height: 4rem;
+  width: 6rem;
+  font-size: 1.5rem;
+  position: absolute;
+  transform: translate(-50% -50%);
+  top: 43%;
+  left: 41%;
+  display: grid;
+  place-items: center;
+  z-index: 2;
+  border-radius: .5rem;
+}
+
+.simon::before{
+  content: "";
+  position: absolute;
+  height: 12rem;
+  width: 12rem; 
+  background-color: black;
+  z-index: 1;
+  border-radius: 50%;
+  transform: translate(-50% -50%);
+  top: 31%;
+  left: 31%;
+
+}
+
+.hide{
+  display: none;
+}
+
+.start {
+  background-color:#003f5e;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#start {
+  padding: 1rem;
+  border-radius:0.3rem;
+  transition: 10ms ease;
+  border:none;
+  outline: none;
+}
+
+#start:active{
+  background-color: rgba(255, 255, 255, 0.616);
+  transition: 10ms ease;
+}
+
+#result{
+  margin: 2rem;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 600px){
+  body{
+    font-size: 10px;
+  }
+
+  .container {
+    height: 22rem;
+    width: 22rem;
+  }
+
+  .color-part{
+    height: 8.5rem;
+    width: 8.5rem;
+    position: absolute;
+    }
+
+    .simon{
+      width: 20rem;
+      height: 20rem;
+      background-color: black;
+      border-radius: 50%;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+
+    }
+
+    .color1 {
+      background-color: #008000;
+      border-radius: 13rem 0 0 0 ;
+      transform: translate(-50% -50%);
+      top: 1rem;
+      left: 1rem;
+    }
+    
+    .color2 {
+      background-color: #ff0000;
+      border-radius: 0 13rem 0 0;
+      transform: translate(-50% -50%);
+      top: 1rem;
+      left: 10.5rem;
+    }
+    
+    .color3{
+      background-color: #ffff00;
+      border-radius: 0 0 0 14em;
+      transform: translate(-50% -50%);
+      top: 10.5rem;
+      left: 1rem;
+    }
+    
+    .color4 {
+      background-color: #1111a7;
+      border-radius: 0 0 14rem 0;
+      transform: translate(-50% -50%);
+      top: 10.5rem;
+      left: 10.5rem;
+    }
+
+    .simon::before{  
+      height: 8rem;
+      width: 8rem; }
+
+      .counter {
+        height: 3rem;
+        width: 4.5rem;
+        font-size: 1.3rem;
+        position: absolute;
+        transform: translate(-50% -50%);
+        top: 43%;
+        left: 40%;
+        display: grid;
+        place-items: center;
+        z-index: 2;
+        border-radius: .5rem;
+      }
+      
+
+}
